@@ -71,7 +71,6 @@ export async function crud(options) {
 
 async function initSpring(options) {
     // spring init --name=api --dependencies=web,sqlserver,data-jpa api
-    console.log(options)
     const result = await execa("spring", [
         "init",
         `--name=${options.name}`,
